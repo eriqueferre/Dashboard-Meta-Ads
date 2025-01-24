@@ -5,9 +5,6 @@ import numpy as np
 
 
 
-
-
-
 # Configuração da página para ocupar toda a largura
 st.set_page_config(layout="wide")
 
@@ -15,7 +12,7 @@ st.set_page_config(layout="wide")
 st.title("Dashboard Trafego Pago")
 
 # Caminho do Arquivo Excel
-caminho_arquivo = "C:\\Users\\COTER\\Documents\\Meus projetos  Dashboard\\2. Análise de Marketing Digital\\Dados\\campanhas_Meta ads.xlsx"
+caminho_arquivo = "C:\\Users\\COTER\Documents\\aulas python\\campanhas_Meta_ads.xlsx"
 
 # Ler o arquivo Excel
 try:
@@ -115,7 +112,7 @@ grafico = alt.Chart(df_melted).mark_bar(size=20).encode(  # Reduzindo a largura 
 
 
 # Carregar os dados do Excel
-df = pd.read_excel("C:\\Users\\COTER\\Documents\\Meus projetos  Dashboard\\2. Análise de Marketing Digital\\Dados\\campanhas_Meta ads.xlsx")
+df = pd.read_excel("C:\\Users\\COTER\Documents\\aulas python\\campanhas_Meta_ads.xlsx")
 
 # Limpar espaços extras nos nomes das colunas
 df.columns = df.columns.str.strip()
@@ -161,12 +158,10 @@ with col2:
 
 
 
-
-
 # ESTETE
 
 # Carregar os dados
-df = pd.read_excel("C:\\Users\\COTER\\Documents\\Meus projetos  Dashboard\\2. Análise de Marketing Digital\\Dados\\campanhas_Meta ads.xlsx")
+df = pd.read_excel("C:\\Users\\COTER\Documents\\aulas python\\campanhas_Meta_ads.xlsx")
 
 # Selecionar apenas as colunas mais importantes
 df = df[['nome_campanha', 'impressões', 'cliques', 'CTR', 'investimento']]
